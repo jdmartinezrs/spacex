@@ -1,10 +1,94 @@
 @import url(./variables.css); 
 
-.header__title{
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 13px;
+
+}
+
+
+
+header{
+    width: 100vw;
+    min-height: 80px;
     background: red;
+
 }
 
-
-.footer{
+footer{
     background: blue;
+    width: 100vw;
+    min-height: 90px;
 }
+
+
+main{
+
+    display: grid;
+    background: blueviolet;
+    grid-template-columns: repeat(10,1fr);
+    /* grid-template-rows: repeat(10,1fr); */
+    width: 100vw;
+    min-height: 796px;
+    grid-template-areas:
+    "numeroUno numeroUno numerDos numerDos numerDos numerDos numerDos numerDos numerTres numerTres"
+    /* "numeroUno numeroUno . . . . . . numerTres numerTres"
+    "numeroUno numeroUno . . . . . . numerTres numerTres"
+    "numeroUno numeroUno . . . . . . numerTres numerTres"
+    "numeroUno numeroUno . . . . . . numerTres numerTres"
+    "numeroUno numeroUno . . . . . . numerTres numerTres"
+    "numeroUno numeroUno . . . . . . numerTres numerTres"
+    "numeroUno numeroUno . . . . . . numerTres numerTres"
+    "numeroUno numeroUno . . . . . . numerTres numerTres"
+    "numeroUno numeroUno . . . . . . numerTres numerTres" */
+    ;
+}
+
+
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header__title{
+    display: flex;
+    justify-content: center;
+}
+
+.main__one{
+    
+    display: flex;
+    flex-direction: column;
+    padding-top: 50px;
+    align-items: center;
+    background: orangered;
+    grid-area: numeroUno;
+    list-style: none;
+    gap: 50px;
+}
+
+.main__two{
+    
+    display: grid;
+    background: yellow;
+    grid-area: numerDos;
+    grid-template-columns: repeat(10,1fr);
+    grid-template-areas: ;
+
+
+
+}
+
+.main__three{
+    background: pink;
+    grid-area: numerTres;
+
+}
+
+.mainone__uno {
+    background: grey;
+}
+
